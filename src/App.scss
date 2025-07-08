@@ -4,10 +4,22 @@
   text-align: center;
   width: 100%;
   overflow-x: hidden;
+  font-family: "Poppins", sans-serif;
+  transition: background-color 0.3s ease-in-out;
 }
 
 .App-logo {
   height: 40vmin;
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
 }
 
 .App-header {
@@ -17,14 +29,27 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(0.625rem + 2vmin);
+  font-size: clamp(1rem, 2.5vw, 2rem);
   color: $textColorDark;
+  padding: 2rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 
 .App-link {
   color: $appLink;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.2s ease;
+
+  &:hover {
+    color: darken($appLink, 10%);
+  }
 }
 
 .subTitle {
   color: $subTitle;
+  font-size: 1.25rem;
+  margin-top: 1rem;
+  font-style: italic;
+  letter-spacing: 0.5px;
 }
