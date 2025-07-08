@@ -26,6 +26,12 @@
   -webkit-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  &:hover {
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: $lightBoxShadowDark 0px 20px 40px -10px;
+    
+  }
 }
 .certificate-detail-div {
   text-align: center;
@@ -71,7 +77,9 @@
   padding: 0 0.75em;
   cursor: pointer;
   transition: 0.2s ease-in;
+  
 }
 span.certificate-tag:hover {
   background: $buttonHover;
 }
+

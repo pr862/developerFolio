@@ -131,4 +131,14 @@
     max-width: 80%;
     margin: auto;
   }
+  .education-card::before {
+  content: "🎓";
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 2.2rem;
+  opacity: 0.18;
+  pointer-events: none;
+  z-index: 1;
+}
 }

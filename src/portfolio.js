@@ -18,7 +18,7 @@ const illustration = {
 };
 
 const greeting = {
-  title: "Hi, I'm Princy Vithani",
+  title: "Hi, I'm Princy Vithani.",
   subtitle: "Web Developer | Coder | Learner"
 };
 
