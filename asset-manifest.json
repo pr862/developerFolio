@@ -27,8 +27,5 @@
     "990.c6a7ee28.chunk.css.map": "/developerFolio/static/css/990.c6a7ee28.chunk.css.map",
     "990.567a0b93.chunk.js.map": "/developerFolio/static/js/990.567a0b93.chunk.js.map"
   },
-  "entrypoints": [
-    "static/css/main.1c053f22.css",
-    "static/js/main.94c8c530.js"
-  ]
+  "entrypoints": ["static/css/main.1c053f22.css", "static/js/main.94c8c530.js"]
 }
