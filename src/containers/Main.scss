@@ -2,6 +2,7 @@
 
 .dark-mode {
   background-color: $darkBackground;
-  color: white;
+  color: rgb(255, 255, 255);
   transition: "0.1s";
+   background: linear-gradient(135deg, #ffffff, #f3e8ff);
 }

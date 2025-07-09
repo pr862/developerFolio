@@ -11,28 +11,32 @@
   line-height: 24px;
   font-weight: 700;
   margin: 15px 0 0 0;
+  
 }
 .card-subtitle {
   color: $cardSubtitle;
   font-size: 1.063rem;
   line-height: 1.5rem;
 }
+@import "../../_globalColor";
+
 .certificate-card {
-  background-color: $lightBackground2;
-  box-shadow: $lightBoxShadowDark 0px 10px 30px -15px;
+  background: linear-gradient(135deg, #ffffff, #f3e8ff);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  border-radius: 16px;
   padding: 1.5rem;
-  border-radius: 10px;
-  border: 1px solid $lightBorder1;
-  -webkit-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  transition: all 0.3s ease;
+  box-shadow: 0 8px 32px rgba(186, 85, 211, 0.2); // purple glow
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+
   &:hover {
     transform: translateY(-5px) scale(1.02);
-    box-shadow: $lightBoxShadowDark 0px 20px 40px -10px;
-    
+    box-shadow: 0 12px 45px rgba(186, 85, 211, 0.3); // stronger glow on hover
   }
+  
 }
+
 .certificate-detail-div {
   text-align: center;
 }
@@ -62,6 +66,14 @@
   justify-content: center;
 }
 .certificate-card-footer span.certificate-tag {
+  background: linear-gradient(90deg, #6e3497, #ba55d3);
+  color: white;
+  font-size: 0.75rem;
+  padding: 0.4rem 0.8rem;
+  border-radius: 999px;
+  transition: background 0.3s;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(186, 85, 211, 0.2);
   background: $buttonColor;
   color: $lightBackground3;
   vertical-align: middle;

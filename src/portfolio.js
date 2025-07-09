@@ -19,15 +19,17 @@ const illustration = {
 
 const greeting = {
   title: "Hi, I'm Princy Vithani.",
-  subtitle: "Web Developer | Coder | Learner"
+  subtitle: "Web Developer | Coder | Learner",
+  displayGreeting: true
 };
+
 
 // Social Media Links
 
 const socialMediaLinks = {
   github: "https://github.com/pr862",
   linkedin: "https://www.linkedin.com/in/princyvithani/",
-  gmail: "princyvithani@gmail.com",
+  gmail: "princyvithani09@gmail.com",
   display: true // Set true to display this section, defaults to false
 };
 
@@ -56,30 +58,17 @@ const skillsSection = {
 // Education Section
 
 const educationInfo = {
-  display: true, // Set false to hide this section, defaults to true
+  display: true,
   schools: [
     {
-schoolName: "Harvard University",
-logo: require("./assets/images/harvardLogo.png"),
-subHeader: "Master of Science in Computer Science",
-duration: "August 2020 - May 2022",
-desc: "Specialized in AI and web technologies with hands-on research experience.",
-descBullets: [
-  "Built machine learning models for predictive analytics in healthcare",
-  "Collaborated on full-stack development for university research portal"
-]
-
-    },
-    {
-      schoolName: "Stanford University",
-      logo: require("./assets/images/stanfordLogo.png"),
-      subHeader: "Bachelor of Science in Computer Science",
-      duration: "September 2013 - April 2017",
-      desc: "Ranked top 10% in the program. Took courses about Software Engineering, Web Security, Operating Systems, ...",
-      descBullets: ["Lorem ipsum dolor sit amet, consectetur adipiscing elit"]
+      schoolName: "SHREE SWAMI ATMANAND SARASWATI INSTITUTE OF TECHNOLOGY",
+      subHeader: "Bachelor in Computer Engineering",
+      duration: "2022 - Present",
+      desc: "Focusing on Web Development and Software Fundamentals"
     }
   ]
 };
+
 
 // Your top 3 proficient stacks/tech experience
 
@@ -92,7 +81,7 @@ const techStack = {
     },
     {
       Stack: "Backend",
-      progressPercentage: "70%"
+      progressPercentage: "65%"
     },
     {
       Stack: "Programming",
@@ -108,30 +97,24 @@ const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
     {
-      role: "Software Engineer",
-      company: "Facebook",
-      companylogo: require("./assets/images/facebookLogo.png"),
-      date: "June 2018 – Present",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        title: "Work Experience",
+  subtitle:
+    "I have completed an internship at Canopas where I worked on real-world projects and improved my development skills.",
+  experiences: [
+    {
+      role: "Frontend Developer Intern",
+      company: "Canopas",
+      companylogo: require("./assets/images/images.jpeg"),
+      date: "June 2025 – Present",
+      desc: "Working on developing and maintaining modern, responsive UI using React, SCSS, and reusable components.",
       descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+        "Built user interfaces with clean and maintainable code",
+        "Collaborated with the design and backend teams",
+        "Worked with Git and GitHub for version control"
       ]
-    },
-    {
-      role: "Front-End Developer",
-      company: "Quora",
-      companylogo: require("./assets/images/quoraLogo.png"),
-      date: "May 2017 – May 2018",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    },
-    {
-      role: "Software Engineer Intern",
-      company: "Airbnb",
-      companylogo: require("./assets/images/airbnbLogo.png"),
-      date: "Jan 2015 – Sep 2015",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
     }
+  ]
+    },
   ]
 };
 
@@ -140,126 +123,79 @@ To know how to get github key look at readme.md */
 
 const openSource = {
   showGithubProfile: "true", // Set true or false to show Contact profile using Github, defaults to true
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Some big projects you have worked on
-
 const bigProjects = {
-  title: "Big Projects",
-  subtitle: "SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH",
+  title: "Mini Projects",
+  subtitle: "Projects I'm currently building and customizing",
   projects: [
     {
-      image: require("./assets/images/saayaHealthLogo.webp"),
-      projectName: "Saayahealth",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      
+      projectName: "DevFolio",
+      projectDesc:
+        "A personalized portfolio site built using React and DeveloperFolio, showcasing my internship and frontend projects.",
       footerLink: [
         {
-          name: "Visit Website",
-          url: "http://saayahealth.com/"
-        }
-        //  you can add extra buttons here.
-      ]
-    },
-    {
-      image: require("./assets/images/nextuLogo.webp"),
-      projectName: "Nextu",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-      footerLink: [
-        {
-          name: "Visit Website",
-          url: "http://nextu.se/"
-        }
+          name: "GitHub Repo",
+          url: "https://github.com/pr862/developerFolio"
+        },
+        
       ]
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: true
 };
+
 
 // Achievement Section
 // Include certificates, talks etc
 
 const achievementSection = {
-  title: emoji("Achievements And Certifications 🏆 "),
-  subtitle:
-    "Achievements, Certifications, Award Letters and Some Cool Stuff that I have done !",
+  title: emoji("Achievements & Certifications 🏆"),
+  subtitle: "My internship certification and learning milestones.",
 
   achievementsCards: [
     {
-      title: "Google Code-In Finalist",
-      subtitle:
-        "First Pakistani to be selected as Google Code-in Finalist from 4000 students from 77 different countries.",
-      image: require("./assets/images/codeInLogo.webp"),
-      imageAlt: "Google Code-In Logo",
+      title: "Internship at Canopas",
+      subtitle: "Completed a frontend development internship at Canopas, working on real-world React projects and UI design.",
+      image: require("./assets/images/images.jpeg"), // Replace with your logo image path
+      imageAlt: "Canopas Logo",
       footerLink: [
         {
-          name: "Certification",
-          url: "https://drive.google.com/file/d/0B7kazrtMwm5dYkVvNjdNWjNybWJrbndFSHpNY2NFV1p4YmU0/view?usp=sharing"
-        },
-        {
-          name: "Award Letter",
-          url: "https://drive.google.com/file/d/0B7kazrtMwm5dekxBTW5hQkg2WXUyR3QzQmR0VERiLXlGRVdF/view?usp=sharing"
-        },
-        {
-          name: "Google Code-in Blog",
-          url: "https://opensource.googleblog.com/2019/01/google-code-in-2018-winners.html"
-        }
-      ]
-    },
-    {
-      title: "Google Assistant Action",
-      subtitle:
-        "Developed a Google Assistant Action JavaScript Guru that is available on 2 Billion devices world wide.",
-      image: require("./assets/images/googleAssistantLogo.webp"),
-      imageAlt: "Google Assistant Action Logo",
-      footerLink: [
-        {
-          name: "View Google Assistant Action",
-          url: "https://assistant.google.com/services/a/uid/000000100ee688ee?hl=en"
-        }
-      ]
-    },
-
-    {
-      title: "PWA Web App Developer",
-      subtitle: "Completed Certifcation from SMIT for PWA Web App Development",
-      image: require("./assets/images/pwaLogo.webp"),
-      imageAlt: "PWA Logo",
-      footerLink: [
-        {name: "Certification", url: ""},
-        {
-          name: "Final Project",
-          url: "https://pakistan-olx-1.firebaseapp.com/"
+          name: "View Certificate",
+          url: "https://drive.google.com/file/d/174QX13ffIVCAMwFx9_xrScAwd8SC4mEd/view?usp=sharing" // Replace with your actual certificate URL (e.g., Google Drive link)
         }
       ]
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: true
 };
 
 // Blogs Section
-
 const blogSection = {
-  title: "Blogs",
+  title: "Tech Stack Highlights",
   subtitle:
-    "With Love for Developing cool stuff, I love to write and teach others what I have learnt.",
-  displayMediumBlogs: "true", // Set true to display fetched medium blogs instead of hardcoded ones
+    "These are the essential tools I use to design, code, and manage modern frontend projects.",
+  displayMediumBlogs: "false",
   blogs: [
     {
-      url: "https://blog.usejournal.com/create-a-google-assistant-action-and-win-a-google-t-shirt-and-cloud-credits-4a8d86d76eae",
-      title: "Win a Google Assistant Tshirt and $200 in Google Cloud Credits",
+      url: "https://create-react-app.dev/docs/adding-a-sass-stylesheet/",
+      title: "React & SCSS",
       description:
-        "Do you want to win $200 and Google Assistant Tshirt by creating a Google Assistant Action in less then 30 min?"
+        "Official guide on how to integrate SCSS (Sass) with React using Create React App for modular and maintainable styling."
     },
     {
-      url: "https://medium.com/@saadpasta/why-react-is-the-best-5a97563f423e",
-      title: "Why REACT is The Best?",
+      url: "https://www.freecodecamp.org/learn",
+      title: "JavaScript & Git",
       description:
-        "React is a JavaScript library for building User Interface. It is maintained by Facebook and a community of individual developers and companies."
+        "FreeCodeCamp’s hands-on curriculum to learn JavaScript fundamentals and Git version control for real-world web development."
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: true
 };
+
 
 // Talks Sections
 
@@ -277,20 +213,20 @@ const talkSection = {
       event_url: "https://www.facebook.com/events/2339906106275053/"
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Podcast Section
 
 const podcastSection = {
   title: emoji("Podcast 🎙️"),
-  subtitle: "I LOVE TO TALK ABOUT MYSELF AND TECHNOLOGY",
+  subtitle: "I love sharing my developer journey, learnings, and insights about frontend development.",
 
-  // Please Provide with Your Podcast embeded Link
+  // Replace the link below with your actual podcast URL or embed link
   podcast: [
-    "https://anchor.fm/codevcast/embed/episodes/DevStory---Saad-Pasta-from-Karachi--Pakistan-e9givv/a-a15itvo"
+    "https://anchor.fm/examplepodcast/embed/episodes/Internship-Experience-at-Canopas-e1a2b3c"
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set to false if you want to hide this section
 };
 
 // Resume Section
@@ -305,10 +241,11 @@ const resumeSection = {
 const contactInfo = {
   title: emoji("Contact Me ☎️"),
   subtitle:
-    "Discuss a project or just want to say hi? My Inbox is open for all.",
-  number: "+92-0000000000",
-  email_address: "saadpasta70@gmail.com"
+    "Discuss a project or just want to say hi? My inbox is open — feel free to reach out!",
+  number: "+91-XXXXXXXXXX", // Replace with your actual number if you want it public
+  email_address: "princyvithani09@gmail.com"
 };
+
 
 // Twitter Section
 
