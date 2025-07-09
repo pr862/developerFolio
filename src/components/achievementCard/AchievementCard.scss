@@ -11,7 +11,6 @@
   line-height: 24px;
   font-weight: 700;
   margin: 15px 0 0 0;
-  
 }
 .card-subtitle {
   color: $cardSubtitle;
@@ -34,7 +33,6 @@
     transform: translateY(-5px) scale(1.02);
     box-shadow: 0 12px 45px rgba(186, 85, 211, 0.3); // stronger glow on hover
   }
-  
 }
 
 .certificate-detail-div {
@@ -89,9 +87,7 @@
   padding: 0 0.75em;
   cursor: pointer;
   transition: 0.2s ease-in;
-  
 }
 span.certificate-tag:hover {
   background: $buttonHover;
 }
-

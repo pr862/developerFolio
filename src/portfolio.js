@@ -23,7 +23,6 @@ const greeting = {
   displayGreeting: true
 };
 
-
 // Social Media Links
 
 const socialMediaLinks = {
@@ -39,21 +38,26 @@ const skillsSection = {
   title: "Crafting the Web",
   subTitle: "PASSIONATE FRONTEND DEVELOPER EXPLORING THE DIGITAL UNIVERSE",
   skills: [
-    emoji("⚡ Building responsive and accessible UIs with HTML, CSS & JavaScript"),
-    emoji("⚡ Creating seamless experiences using React.js and modern frameworks"),
-    emoji("⚡ Connecting APIs & tools like Firebase, REST, and Git to bring data to life")
+    emoji(
+      "⚡ Building responsive and accessible UIs with HTML, CSS & JavaScript"
+    ),
+    emoji(
+      "⚡ Creating seamless experiences using React.js and modern frameworks"
+    ),
+    emoji(
+      "⚡ Connecting APIs & tools like Firebase, REST, and Git to bring data to life"
+    )
   ],
   softwareSkills: [
-    { skillName: "HTML5", fontAwesomeClassname: "fab fa-html5" },
-    { skillName: "CSS3", fontAwesomeClassname: "fab fa-css3-alt" },
-    { skillName: "JavaScript", fontAwesomeClassname: "fab fa-js" },
-    { skillName: "React", fontAwesomeClassname: "fab fa-react" },
-    { skillName: "Git", fontAwesomeClassname: "fab fa-git" },
-    { skillName: "Firebase", fontAwesomeClassname: "fas fa-fire" }
+    {skillName: "HTML5", fontAwesomeClassname: "fab fa-html5"},
+    {skillName: "CSS3", fontAwesomeClassname: "fab fa-css3-alt"},
+    {skillName: "JavaScript", fontAwesomeClassname: "fab fa-js"},
+    {skillName: "React", fontAwesomeClassname: "fab fa-react"},
+    {skillName: "Git", fontAwesomeClassname: "fab fa-git"},
+    {skillName: "Firebase", fontAwesomeClassname: "fas fa-fire"}
   ],
   display: true
 };
-
 
 // Education Section
 
@@ -68,7 +72,6 @@ const educationInfo = {
     }
   ]
 };
-
 
 // Your top 3 proficient stacks/tech experience
 
@@ -97,24 +100,24 @@ const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
     {
-        title: "Work Experience",
-  subtitle:
-    "I have completed an internship at Canopas where I worked on real-world projects and improved my development skills.",
-  experiences: [
-    {
-      role: "Frontend Developer Intern",
-      company: "Canopas",
-      companylogo: require("./assets/images/images.jpeg"),
-      date: "June 2025 – Present",
-      desc: "Working on developing and maintaining modern, responsive UI using React, SCSS, and reusable components.",
-      descBullets: [
-        "Built user interfaces with clean and maintainable code",
-        "Collaborated with the design and backend teams",
-        "Worked with Git and GitHub for version control"
+      title: "Work Experience",
+      subtitle:
+        "I have completed an internship at Canopas where I worked on real-world projects and improved my development skills.",
+      experiences: [
+        {
+          role: "Frontend Developer Intern",
+          company: "Canopas",
+          companylogo: require("./assets/images/images.jpeg"),
+          date: "June 2025 – Present",
+          desc: "Working on developing and maintaining modern, responsive UI using React, SCSS, and reusable components.",
+          descBullets: [
+            "Built user interfaces with clean and maintainable code",
+            "Collaborated with the design and backend teams",
+            "Worked with Git and GitHub for version control"
+          ]
+        }
       ]
     }
-  ]
-    },
   ]
 };
 
@@ -132,7 +135,6 @@ const bigProjects = {
   subtitle: "Projects I'm currently building and customizing",
   projects: [
     {
-      
       projectName: "DevFolio",
       projectDesc:
         "A personalized portfolio site built using React and DeveloperFolio, showcasing my internship and frontend projects.",
@@ -140,14 +142,12 @@ const bigProjects = {
         {
           name: "GitHub Repo",
           url: "https://github.com/pr862/developerFolio"
-        },
-        
+        }
       ]
     }
   ],
   display: true
 };
-
 
 // Achievement Section
 // Include certificates, talks etc
@@ -159,7 +159,8 @@ const achievementSection = {
   achievementsCards: [
     {
       title: "Internship at Canopas",
-      subtitle: "Completed a frontend development internship at Canopas, working on real-world React projects and UI design.",
+      subtitle:
+        "Completed a frontend development internship at Canopas, working on real-world React projects and UI design.",
       image: require("./assets/images/images.jpeg"), // Replace with your logo image path
       imageAlt: "Canopas Logo",
       footerLink: [
@@ -196,7 +197,6 @@ const blogSection = {
   display: true
 };
 
-
 // Talks Sections
 
 const talkSection = {
@@ -220,7 +220,8 @@ const talkSection = {
 
 const podcastSection = {
   title: emoji("Podcast 🎙️"),
-  subtitle: "I love sharing my developer journey, learnings, and insights about frontend development.",
+  subtitle:
+    "I love sharing my developer journey, learnings, and insights about frontend development.",
 
   // Replace the link below with your actual podcast URL or embed link
   podcast: [
@@ -245,7 +246,6 @@ const contactInfo = {
   number: "+91-XXXXXXXXXX", // Replace with your actual number if you want it public
   email_address: "princyvithani09@gmail.com"
 };
-
 
 // Twitter Section
 

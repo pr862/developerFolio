@@ -18,17 +18,16 @@ export default function WorkExperience() {
                 {workExperiences.experience.map((card, i) => {
                   return (
                     <ExperienceCard
-  isDark={isDark}
-  cardInfo={{
-    company: workExperiences.experience[0].company,
-    desc: workExperiences.experience[0].desc,
-    date: workExperiences.experience[0].date,
-    companylogo: workExperiences.experience[0].companylogo,
-    role: workExperiences.experience[0].role,
-    descBullets: workExperiences.experience[0].descBullets
-  }}
-/>
-
+                      isDark={isDark}
+                      cardInfo={{
+                        company: workExperiences.experience[0].company,
+                        desc: workExperiences.experience[0].desc,
+                        date: workExperiences.experience[0].date,
+                        companylogo: workExperiences.experience[0].companylogo,
+                        role: workExperiences.experience[0].role,
+                        descBullets: workExperiences.experience[0].descBullets
+                      }}
+                    />
                   );
                 })}
               </div>
