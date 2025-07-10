@@ -2,62 +2,62 @@
 
 .experience-card {
   position: relative;
-  background: rgba(255, 255, 255, 0.05);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  box-shadow: 0 8px 32px rgba(31, 38, 135, 0.2);
-  border-radius: 20px;
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  transition: transform 0.4s ease, box-shadow 0.4s ease;
-  overflow: hidden;
+  background-color: $lightBackground2;
+  box-shadow: $lightBoxShadowDark 0px 10px 30px -15px;
+  border-radius: 10px;
+  border: 1px solid $lightBorder1;
 }
 
 .experience-card-dark {
-  background: rgba(20, 20, 20, 0.4);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
-  backdrop-filter: blur(10px);
+  position: relative;
+  background-color: $darkBackground;
+  box-shadow: $lightBoxShadowDark 0px 10px 30px -15px;
+  border-radius: 10px;
+  border: 1px solid $lightBorder1;
 }
 
 .experience-card:hover {
-  transform: translateY(-8px) scale(1.015);
-  box-shadow: 0 20px 40px rgba(161, 140, 209, 0.4);
+  box-shadow: $lightBoxShadowDark 0px 20px 30px -10px;
 }
 
 .experience-banner {
-  background: linear-gradient(135deg, #a18cd1, #fbc2eb);
-  animation: animatedBG 10s ease infinite;
-  background-size: 200% 200%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 150%;
+  background: $experienceCardBannerLG;
+  border-radius: 10px 10px 0px 0px;
+  -webkit-filter: blur(0px);
+  -moz-filter: blur(0px);
+  -o-filter: blur(0px);
+  -ms-filter: blur(0px);
+  filter: blur(0px);
   height: 11rem;
   display: flex;
   align-items: flex-end;
   justify-content: center;
-  border-radius: 20px 20px 0 0;
-  position: relative;
-}
-
-@keyframes animatedBG {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
 }
 
 .experience-blurred_div {
   position: absolute;
-  background: rgba(255, 255, 255, 0.1);
-  filter: blur(8px);
-  height: 100%;
-  width: 100%;
-  border-radius: 20px 20px 0 0;
+  background: $experienceCardBlurredDivLG;
+  -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(5px);
+  height: 11rem;
   top: 0;
   left: 0;
+  width: 100%;
+  border-radius: 10px 10px 0px 0px;
 }
 
 .experience-div-company {
   position: absolute;
+  background: transparent;
+  height: 9rem;
   top: 0;
   left: 0;
-  height: 9rem;
   width: 100%;
   display: flex;
   align-items: center;
@@ -65,82 +65,92 @@
 }
 
 .experience-text-company {
-  font-size: 26px;
+  text-align: center;
+  padding: 1.5rem;
+  margin: 0;
+  color: $lightBackground1;
+  font-size: 25px;
+  text-align: center;
   font-weight: 700;
-  color: white;
-  padding: 0.8rem 1.2rem;
-  background-color: rgba(0, 0, 0, 0.3);
-  border-radius: 12px;
-  backdrop-filter: blur(5px);
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-  z-index: 2;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 .experience-roundedimg {
   position: absolute;
+  object-fit: cover;
+  left: 0;
+  right: 0;
   top: 7rem;
-  left: 50%;
-  transform: translateX(-50%);
+  margin-left: auto;
+  margin-right: auto;
   width: 8rem;
   height: 8rem;
+  box-shadow: 0 0.5rem 1rem $lightBoxShadowDarker;
   border-radius: 50%;
-  object-fit: cover;
-  box-shadow: 0 0 20px rgba(161, 140, 209, 0.5);
-  z-index: 2;
-}
-
-.experience-text-details {
-  padding: 2rem;
-  text-align: center;
 }
 
 .experience-text-role {
-  font-size: 24px;
+  text-align: center;
+  color: $textColor;
   font-weight: 700;
-  color: $textColor;
-  margin: 0;
+  font-size: 25px;
+  margin: 0px;
+  padding-top: 1.5rem;
+  line-height: normal;
 }
-
-.experience-text-date {
-  font-size: 18px;
-  font-weight: 600;
-  color: $textColor;
-  margin-top: 0.5rem;
-}
-
-.experience-text-desc {
-  margin-top: 1rem;
-  font-size: 16px;
-  color: $textColor;
-  line-height: 1.6;
-}
-
 .dark-mode-text {
   color: $textColorDark !important;
 }
+.experience-text-date {
+  text-align: center;
+  color: $textColor;
+  font-size: 20px;
+  margin: 0px;
+  padding-top: 1rem;
+  font-weight: 600;
+}
 
-/* Responsive Design */
+.experience-text-desc {
+  text-align: center;
+}
 
-@media (max-width: 768px) {
+.experience-text-details {
+  padding: 1.5rem;
+  margin-top: 2rem;
+}
+
+/* Media Query */
+
+@media (max-width: 1380px) {
   .experience-text-role {
-    font-size: 20px;
+    padding-top: 0.5rem;
+    font-size: 22px;
   }
-
   .experience-text-company {
     font-size: 22px;
-    padding: 0.6rem 1rem;
   }
-
   .experience-text-date {
-    font-size: 16px;
+    font-size: 18px;
   }
-
-  .experience-text-desc {
-    font-size: 15px;
-  }
-
   .experience-roundedimg {
     width: 6.5rem;
     height: 6.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .experience-text-role {
+    font-size: 22px;
+  }
+  .experience-text-company {
+    font-size: 22px;
+  }
+  .experience-text-date {
+    font-size: 18px;
+  }
+  .experience-text-desc {
+    font-size: 16px;
   }
 }

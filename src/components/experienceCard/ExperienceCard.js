@@ -12,14 +12,12 @@ export default function ExperienceCard({ isDark }) {
 
   return (
     <div className={isDark ? "experience-card-dark" : "experience-card"}>
+      {/* ✅ Only one experience-banner */}
       <div
         className="experience-banner"
-        style={{
-          background: "linear-gradient(135deg, #8e44ad, #a29bfe)"
-        }}
+        style={{ background: "linear-gradient(135deg, #6e3497, #ba55d3)" }}
       >
         <div className="experience-blurred_div"></div>
-
         <div className="experience-div-company">
           <h5 className="experience-text-company">Canopas</h5>
         </div>
@@ -32,8 +30,6 @@ export default function ExperienceCard({ isDark }) {
           alt="Canopas"
         />
       </div>
-
-      <div className="experience-divider"></div>
 
       <div className="experience-text-details">
         <h5 className={isDark ? "experience-text-role dark-mode-text" : "experience-text-role"}>

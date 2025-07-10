@@ -1,28 +1,42 @@
-import React from "react";
+import React, {useContext} from "react";
+import "./WorkExperience.scss";
 import ExperienceCard from "../../components/experienceCard/ExperienceCard";
-import { workExperiences } from "../../portfolio";
-import "./WorkExperience.scss"; // Make sure this SCSS file exists
+import {workExperiences} from "../../portfolio";
+import {Fade} from "react-reveal";
+import StyleContext from "../../contexts/StyleContext";
 
-function WorkExperience() {
-  if (!workExperiences.display) return null;
+export default function WorkExperience() {
+  const {isDark} = useContext(StyleContext);
+  if (workExperiences.display) {
+    return (
+      <div id="experience">
+        <Fade bottom duration={1000} distance="20px">
+          <div className="experience-container" id="workExperience">
+            <div>
+              <h1 className="experience-heading">Experiences</h1>
+              <div className="experience-cards-div">
+                {workExperiences.experience.map((card, i) => {
+                  return (
+                    <ExperienceCard
+  isDark={isDark}
+  cardInfo={{
+    company: workExperiences.experience[0].company,
+    desc: workExperiences.experience[0].desc,
+    date: workExperiences.experience[0].date,
+    companylogo: workExperiences.experience[0].companylogo,
+    role: workExperiences.experience[0].role,
+    descBullets: workExperiences.experience[0].descBullets
+  }}
+/>
 
-  return (
-    <section className="work-experience-section" id="workExperience">
-      <div className="container">
-        {workExperiences.experience.map((block, i) => (
-          <div className="experience-block" key={i}>
-            <h2 className="experience-block-title">{block.title}</h2>
-            <p className="experience-block-subtitle">{block.subtitle}</p>
-            <div className="experience-cards-div">
-              {block.experiences.map((exp, j) => (
-                <ExperienceCard key={j} experience={exp} />
-              ))}
+                  );
+                })}
+              </div>
             </div>
           </div>
-        ))}
+        </Fade>
       </div>
-    </section>
-  );
+    );
+  }
+  return null;
 }
-
-export default WorkExperience;
