@@ -25,7 +25,11 @@
 
 // Certificate Card
 .certificate-card {
-  background: linear-gradient(135deg, #ffffff, #fce8ee); // light maroon background
+  background: linear-gradient(
+    135deg,
+    #ffffff,
+    #fce8ee
+  ); // light maroon background
   border: 1px solid rgba(255, 255, 255, 0.2);
   backdrop-filter: blur(15px);
   -webkit-backdrop-filter: blur(15px);
@@ -80,7 +84,7 @@
 
 // Tag Styling
 .certificate-card-footer span.certificate-tag {
-  background: linear-gradient(90deg, #801336, #E589AA); // dark to light maroon
+  background: linear-gradient(90deg, #801336, #e589aa); // dark to light maroon
   color: white;
   font-size: 0.75rem;
   padding: 0.4rem 0.8rem;
@@ -103,6 +107,9 @@
 
 // Gradient reverse on hover
 span.certificate-tag:hover {
-  background: linear-gradient(90deg, #E589AA, #801336); // light to dark on hover
+  background: linear-gradient(
+    90deg,
+    #e589aa,
+    #801336
+  ); // light to dark on hover
 }
-

@@ -15,7 +15,7 @@ export default function ExperienceCard({isDark}) {
       {/* ✅ Only one experience-banner */}
       <div
         className="experience-banner"
-        style={{ background: "linear-gradient(135deg, #6e3497, #ba55d3)" }}
+        style={{background: "linear-gradient(135deg, #6e3497, #ba55d3)"}}
       >
         <div className="experience-blurred_div"></div>
         <div className="experience-div-company">
