@@ -1,36 +1,52 @@
-import React, {createRef} from "react";
+import React, {useState, createRef} from "react";
 import "./ExperienceCard.scss";
+import ColorThief from "colorthief";
 
-export default function ExperienceCard({isDark}) {
+export default function ExperienceCard({cardInfo, isDark}) {
+  const [colorArrays, setColorArrays] = useState([]);
   const imgRef = createRef();
 
-  const descBullets = [
-    "Built user interfaces with clean and maintainable code",
-    "Collaborated with the design and backend teams",
-    "Worked with Git and GitHub for version control"
-  ];
+  function getColorArrays() {
+    const colorThief = new ColorThief();
+    setColorArrays(colorThief.getColor(imgRef.current));
+  }
+
+  function rgb(values) {
+    return typeof values === "undefined"
+      ? null
+      : "rgb(" + values.join(", ") + ")";
+  }
+
+  const GetDescBullets = ({descBullets, isDark}) => {
+    return descBullets
+      ? descBullets.map((item, i) => (
+          <li
+            key={i}
+            className={isDark ? "subTitle dark-mode-text" : "subTitle"}
+          >
+            {item}
+          </li>
+        ))
+      : null;
+  };
 
   return (
     <div className={isDark ? "experience-card-dark" : "experience-card"}>
-      {/* ✅ Only one experience-banner */}
-      <div
-        className="experience-banner"
-        style={{background: "linear-gradient(135deg, #6e3497, #ba55d3)"}}
-      >
+      <div style={{background: rgb(colorArrays)}} className="experience-banner">
         <div className="experience-blurred_div"></div>
         <div className="experience-div-company">
-          <h5 className="experience-text-company">Canopas</h5>
+          <h5 className="experience-text-company">{cardInfo.company}</h5>
         </div>
 
         <img
           crossOrigin={"anonymous"}
           ref={imgRef}
           className="experience-roundedimg"
-          src={require("../../assets/images/images.jpeg")}
-          alt="Canopas"
+          src={cardInfo.companylogo}
+          alt={cardInfo.company}
+          onLoad={() => getColorArrays()}
         />
       </div>
-
       <div className="experience-text-details">
         <h5
           className={
@@ -39,7 +55,7 @@ export default function ExperienceCard({isDark}) {
               : "experience-text-role"
           }
         >
-          Frontend Developer Intern
+          {cardInfo.role}
         </h5>
         <h5
           className={
@@ -48,7 +64,7 @@ export default function ExperienceCard({isDark}) {
               : "experience-text-date"
           }
         >
-          June 2025 – Present
+          {cardInfo.date}
         </h5>
         <p
           className={
@@ -57,18 +73,10 @@ export default function ExperienceCard({isDark}) {
               : "subTitle experience-text-desc"
           }
         >
-          Worked on developing and maintaining modern, responsive UI using
-          React, SCSS, and reusable components.
+          {cardInfo.desc}
         </p>
         <ul>
-          {descBullets.map((item, i) => (
-            <li
-              key={i}
-              className={isDark ? "subTitle dark-mode-text" : "subTitle"}
-            >
-              {item}
-            </li>
-          ))}
+          <GetDescBullets descBullets={cardInfo.descBullets} isDark={isDark} />
         </ul>
       </div>
     </div>
