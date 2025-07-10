@@ -4,11 +4,15 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  background: linear-gradient(135deg, #ffffff, #fce8ee); // soft version of light maroon
+  background: linear-gradient(
+    135deg,
+    #ffffff,
+    #fce8ee
+  ); // soft version of light maroon
   border-radius: 20px;
   padding: 2rem;
   border: none;
-  box-shadow: #E589AA;
+  box-shadow: #e589aa;
   overflow: hidden;
   transition: transform 0.4s ease, box-shadow 0.4s ease;
   z-index: 1;
@@ -26,7 +30,11 @@
   right: -40px;
   width: 120px;
   height: 120px;
-  background: radial-gradient(circle, #801336 0%, transparent 70%); // deep maroon glow
+  background: radial-gradient(
+    circle,
+    #801336 0%,
+    transparent 70%
+  ); // deep maroon glow
   filter: blur(50px);
   z-index: 0;
 }
@@ -51,7 +59,7 @@
   text-align: center;
   margin-top: 1rem;
   margin-bottom: 0.5rem;
-  background: linear-gradient(90deg, #801336, #E589AA);
+  background: linear-gradient(90deg, #801336, #e589aa);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: fadeInUp 0.5s ease-in-out;
@@ -75,7 +83,7 @@
 }
 
 .project-tag {
-  background: linear-gradient(90deg, #801336, #E589AA);
+  background: linear-gradient(90deg, #801336, #e589aa);
   color: white;
   font-size: 0.75rem;
   padding: 0.4rem 0.8rem;
@@ -86,7 +94,7 @@
 }
 
 .project-tag:hover {
-  background: linear-gradient(90deg, #E589AA, #801336);
+  background: linear-gradient(90deg, #e589aa, #801336);
 }
 
 @keyframes fadeInUp {
