@@ -1,6 +1,6 @@
 import React from "react";
 import ExperienceCard from "../../components/experienceCard/ExperienceCard";
-import { workExperiences } from "../../portfolio";
+import {workExperiences} from "../../portfolio";
 import "./WorkExperience.scss"; // Make sure this SCSS file exists
 
 function WorkExperience() {

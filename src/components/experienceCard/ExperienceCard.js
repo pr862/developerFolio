@@ -1,7 +1,7 @@
-import React, { createRef } from "react";
+import React, {createRef} from "react";
 import "./ExperienceCard.scss";
 
-export default function ExperienceCard({ isDark }) {
+export default function ExperienceCard({isDark}) {
   const imgRef = createRef();
 
   const descBullets = [
@@ -36,18 +36,40 @@ export default function ExperienceCard({ isDark }) {
       <div className="experience-divider"></div>
 
       <div className="experience-text-details">
-        <h5 className={isDark ? "experience-text-role dark-mode-text" : "experience-text-role"}>
+        <h5
+          className={
+            isDark
+              ? "experience-text-role dark-mode-text"
+              : "experience-text-role"
+          }
+        >
           Frontend Developer Intern
         </h5>
-        <h5 className={isDark ? "experience-text-date dark-mode-text" : "experience-text-date"}>
+        <h5
+          className={
+            isDark
+              ? "experience-text-date dark-mode-text"
+              : "experience-text-date"
+          }
+        >
           June 2025 – Present
         </h5>
-        <p className={isDark ? "subTitle experience-text-desc dark-mode-text" : "subTitle experience-text-desc"}>
-          Worked on developing and maintaining modern, responsive UI using React, SCSS, and reusable components.
+        <p
+          className={
+            isDark
+              ? "subTitle experience-text-desc dark-mode-text"
+              : "subTitle experience-text-desc"
+          }
+        >
+          Worked on developing and maintaining modern, responsive UI using
+          React, SCSS, and reusable components.
         </p>
         <ul>
           {descBullets.map((item, i) => (
-            <li key={i} className={isDark ? "subTitle dark-mode-text" : "subTitle"}>
+            <li
+              key={i}
+              className={isDark ? "subTitle dark-mode-text" : "subTitle"}
+            >
               {item}
             </li>
           ))}
