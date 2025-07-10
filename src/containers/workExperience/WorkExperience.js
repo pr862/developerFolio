@@ -1,5 +1,5 @@
 import React, {useContext} from "react";
-import "./WorkExperience.scss";  // Make sure this SCSS file exists
+import "./WorkExperience.scss"; // Make sure this SCSS file exists
 import ExperienceCard from "../../components/experienceCard/ExperienceCard";
 import {workExperiences} from "../../portfolio";
 import {Fade} from "react-reveal";
@@ -21,7 +21,7 @@ export default function WorkExperience() {
                 {workExperiences.experience.map((card, i) => {
                   return (
                     <ExperienceCard
-                      key={i}  // Add a unique key for each element in the list
+                      key={i} // Add a unique key for each element in the list
                       isDark={isDark}
                       cardInfo={{
                         company: card.company,
@@ -42,5 +42,5 @@ export default function WorkExperience() {
     );
   }
 
-  return null;  // If workExperiences.display is false, return null (no content rendered)
+  return null; // If workExperiences.display is false, return null (no content rendered)
 }
