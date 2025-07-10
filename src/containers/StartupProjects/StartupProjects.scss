@@ -4,11 +4,11 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  background: linear-gradient(135deg, #ffffff, #f3e8ff);
+  background: linear-gradient(135deg, #ffffff, #fce8ee); // soft version of light maroon
   border-radius: 20px;
   padding: 2rem;
   border: none;
-  box-shadow: 0 12px 30px rgba(110, 52, 151, 0.1);
+  box-shadow: #E589AA;
   overflow: hidden;
   transition: transform 0.4s ease, box-shadow 0.4s ease;
   z-index: 1;
@@ -16,7 +16,7 @@
 
 .project-card:hover {
   transform: translateY(-12px) scale(1.015);
-  box-shadow: 0 20px 50px rgba(186, 85, 211, 0.2);
+  box-shadow: 0 20px 50px rgba(229, 137, 170, 0.3); // light maroon glow
 }
 
 .project-card::before {
@@ -26,7 +26,7 @@
   right: -40px;
   width: 120px;
   height: 120px;
-  background: radial-gradient(circle, rgba(186, 85, 211, 0.3), transparent 70%);
+  background: radial-gradient(circle, #801336 0%, transparent 70%); // deep maroon glow
   filter: blur(50px);
   z-index: 0;
 }
@@ -51,12 +51,12 @@
   text-align: center;
   margin-top: 1rem;
   margin-bottom: 0.5rem;
-  background: linear-gradient(90deg, #6e3497, #ba55d3);
+  background: linear-gradient(90deg, #801336, #E589AA);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: fadeInUp 0.5s ease-in-out;
   z-index: 1;
-  text-shadow: 0 2px 10px rgba(186, 85, 211, 0.3);
+  text-shadow: 0 2px 10px rgba(229, 137, 170, 0.4);
 }
 
 .card-subtitle {
@@ -75,18 +75,18 @@
 }
 
 .project-tag {
-  background: linear-gradient(90deg, #6e3497, #ba55d3);
+  background: linear-gradient(90deg, #801336, #E589AA);
   color: white;
   font-size: 0.75rem;
   padding: 0.4rem 0.8rem;
   border-radius: 999px;
   transition: background 0.3s;
   cursor: pointer;
-  box-shadow: 0 4px 12px rgba(186, 85, 211, 0.2);
+  box-shadow: 0 4px 12px rgba(229, 137, 170, 0.3);
 }
 
 .project-tag:hover {
-  background: linear-gradient(90deg, #ba55d3, #6e3497);
+  background: linear-gradient(90deg, #E589AA, #801336);
 }
 
 @keyframes fadeInUp {

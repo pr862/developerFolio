@@ -2,30 +2,33 @@
 
 .achievement-heading {
   font-size: 56px;
-  font-weight: 800;
+  font-weight: 900;
   line-height: 1.2;
   margin: 0;
-  background: linear-gradient(90deg, black, #ba55d3);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: fadeInUp 0.6s ease-in-out;
+  color: #111; // pure dark gray for elegance
   text-align: left;
-  text-shadow: 0 4px 20px rgba(186, 85, 211, 0.4);
-  z-index: 1; // soft purple glow
+  letter-spacing: -1px;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.05); // soft elevation effect
+  padding-left: 1rem;
+  animation: fadeInUp 0.6s ease-in-out;
 }
+
 
 .achievement-subtitle {
   text-transform: uppercase;
   font-weight: 600;
   letter-spacing: 1.5px;
   font-size: 18px;
-  color: $subTitle;
+  color: #555; // medium gray
   margin: 0;
   margin-bottom: 50px;
   animation: fadeInUp 0.7s ease-in-out;
   text-align: left;
-  text-shadow: 0 2px 10px rgba(186, 85, 211, 0.3);
+  border-bottom: 2px solid #ddd; // underline divider
+  display: inline-block;
+  padding-bottom: 0.25rem;
 }
+
 
 .subTitle {
   color: $subTitle;
