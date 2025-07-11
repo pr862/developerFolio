@@ -1,7 +1,15 @@
-.experience-cards-div {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
-  gap: 1rem 1rem;
+@import "../../_globalColor";
+
+/* Animation keyframes */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .experience-heading {
@@ -10,6 +18,7 @@
   font-size: 3rem;
   margin-top: 0;
   z-index: 1;
+  animation: fadeInUp 1s ease-in-out both;
 }
 
 .experience-container {
@@ -24,8 +33,14 @@
   flex: 1;
 }
 
-/* Media Query */
+.experience-cards-div {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+  gap: 1rem 1rem;
+  animation: fadeInUp 1.2s ease-in-out both;
+}
 
+/* Responsive styles */
 @media (max-width: 1380px) {
   .experience-heading {
     font-size: 40px;
@@ -36,5 +51,9 @@
   .experience-heading {
     font-size: 30px;
     text-align: center;
+  }
+
+  .experience-cards-div {
+    grid-template-columns: 1fr;
   }
 }

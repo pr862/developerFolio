@@ -1,24 +1,68 @@
 @import "../../_globalColor";
 
+// Main container
+.main {
+  padding: 4rem 2rem;
+}
+
+// Heading style
+.skills-heading {
+  font-size: 48px;
+  font-weight: 800;
+  text-align: left;
+  margin-bottom: 1rem;
+  color: #000;
+  animation: fadeInUp 0.6s ease-in-out;
+
+  @media (max-width: 768px) {
+    font-size: 32px;
+    text-align: center;
+  }
+}
+
+// Subtitle style
+.project-subtitle {
+  text-align: left;
+  font-size: 1.1rem;
+  color: $subTitle;
+  margin-bottom: 2rem;
+  max-width: 700px;
+  line-height: 1.6;
+  font-weight: 400;
+  animation: fadeInUp 0.6s ease-in-out;
+  padding-left: 0.5rem;
+
+  @media (max-width: 768px) {
+    font-size: 1rem;
+    padding: 0 1rem;
+  }
+}
+
+// Card layout
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+  padding: 2rem 0;
+}
+
+// Project Card
 .project-card {
   position: relative;
   display: flex;
   flex-direction: column;
-  background: linear-gradient(
-    135deg,
-    #ffffff,
-    #fce8ee
-  ); // soft version of light maroon
+  background: linear-gradient(135deg, #ffffff, #fce8ee);
   border-radius: 20px;
   padding: 2rem;
   box-shadow: #e589aa;
   overflow: hidden;
   transition: transform 0.4s ease, box-shadow 0.4s ease;
   z-index: 1;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.1),
-    0 8px 32px rgba(229, 137, 170, 0.3); // glowing maroon effect
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.1), 
+              0 8px 32px rgba(229, 137, 170, 0.3); // glowing maroon effect
   transition: transform 0.4s ease, box-shadow 0.4s ease;
+  z-index: 1;
 
   &:hover {
     transform: translateY(-12px) scale(1.015);
@@ -26,6 +70,7 @@
       0 20px 50px rgba(229, 137, 170, 0.4);
   }
 }
+
 
 .project-card:hover {
   transform: translateY(-12px) scale(1.015);
@@ -74,6 +119,7 @@
   z-index: 1;
   text-shadow: none;
 }
+
 .card-subtitle {
   text-align: center;
   color: $textColor;
@@ -98,62 +144,29 @@
   transition: background 0.3s;
   cursor: pointer;
   box-shadow: 0 4px 12px rgba(229, 137, 170, 0.3);
-}
 
-.project-tag:hover {
-  background: linear-gradient(90deg, #e589aa, #801336);
-}
-
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(15px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
+  &:hover {
+    background: linear-gradient(90deg, #e589aa, #801336);
   }
 }
 
-/* Responsive Grid */
-.projects-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 2rem;
-  padding: 2rem 0;
-}
-
-@media (max-width: 768px) {
-  .card-title {
-    font-size: 20px;
-  }
-
-  .card-subtitle {
-    font-size: 14px;
-  }
-}
-.skills-heading {
-  font-size: 48px;
-  font-weight: 800;
-  text-align: left;
-  margin-bottom: 1rem;
-  color: #000; // Light mode (black)
-
-  animation: fadeInUp 0.6s ease-in-out;
-
-  @media (max-width: 768px) {
-    font-size: 32px;
+// Dark mode overrides
+.dark-mode {
+  .skills-heading {
+    color: white;
   }
 }
 
 // Dark mode override
-.dark-mode .skills-heading {
+.dark-mode 
+.skills-heading {
   color: #fff; // Dark mode (white)
 }
 .project-card {
   background: none;
   box-shadow: none;
 }
+
 
 .card-title {
   color: $textColorDark;
@@ -167,7 +180,10 @@
   background: linear-gradient(90deg, #e589aa, #801336);
   color: #fff;
 
-  &:hover {
-    background: linear-gradient(90deg, #801336, #e589aa);
+    &:hover {
+      background: linear-gradient(90deg, #801336, #e589aa);
+    }
   }
-}
+  
+
+
