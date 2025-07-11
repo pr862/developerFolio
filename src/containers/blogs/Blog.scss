@@ -75,3 +75,26 @@
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   }
 }
+.dark-mode {
+  .square {
+    background: #1c1c1c; // dark card background
+    border: 1px solid rgba(255, 255, 255, 0.05); // subtle border
+    box-shadow: 0px 20px 50px rgba(229, 137, 170, 0.2); // maroon glow
+  }
+
+  .square:hover {
+    box-shadow: 0 20px 40px rgba(229, 137, 170, 0.4); // hover effect
+  }
+
+  .blog-header-text {
+    color: $textColorDark;
+  }
+
+  .blog-subtitle {
+    color: $subTitle;
+  }
+
+  .subTitle {
+    color: $subTitle;
+  }
+}

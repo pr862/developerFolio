@@ -20,7 +20,7 @@
 .software-skill-inline > i {
   color: $subTitle;
   transition: color 0.3s, transform 0.3s, box-shadow 0.3s;
-  box-shadow: 0 2px 12px rgba(161, 140, 209, 0.08);
+  box-shadow: 0 2px 12px rgba(229, 137, 170, 0.1); // maroon tint shadow
   border-radius: 16px;
   background: #fff;
   padding: 10px;
@@ -28,9 +28,9 @@
 
 .software-skill-inline > i:hover {
   color: #fff;
-  background: linear-gradient(135deg, #a18cd1, #fbc2eb);
+  background: linear-gradient(135deg, #801336, #e589aa); // maroon gradient
   transform: scale(1.18) rotate(-8deg);
-  box-shadow: 0 8px 32px 0 #a18cd1, 0 0 24px #fbc2eb;
+  box-shadow: 0 8px 32px 0 #801336, 0 0 24px #e589aa;
   cursor: pointer;
 }
 
@@ -44,10 +44,10 @@
   left: 50%;
   top: 110%;
   transform: translateX(-50%) translateY(10px);
-  background: rgba(251, 194, 235, 0.95);
+  background: rgba(229, 137, 170, 0.95); // maroon tooltip bg
   padding: 4px 14px;
   border-radius: 8px;
-  box-shadow: 0 2px 12px rgba(161, 140, 209, 0.12);
+  box-shadow: 0 2px 12px rgba(229, 137, 170, 0.2);
   transition: opacity 0.3s, transform 0.3s;
   white-space: nowrap;
   z-index: 2;
@@ -56,7 +56,7 @@
 .software-skill-inline:hover > p {
   opacity: 1;
   transform: translateX(-50%) translateY(0);
-  color: #a18cd1;
+  color: #fff;
   font-weight: 600;
 }
 

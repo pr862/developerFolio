@@ -150,3 +150,43 @@
 .blog-card-shadow {
   box-shadow: 1px 0px 20px $darkBoxShadow2;
 }
+.dark-mode {
+  .blog-container {
+    background-color: #1c1c1c;
+    color: $textColorDark;
+    box-shadow: 0 0 30px rgba(229, 137, 170, 0.15); // soft maroon glow
+  }
+
+  .blog-card {
+    background: linear-gradient(135deg, #1c1c1c, #2a2a2a); // dark gradient
+    color: $textColorDark;
+  }
+
+  .blog-title {
+    color: $textColorDark;
+  }
+
+  .small {
+    color: $subTitle;
+  }
+
+  .blog-card:hover > .small {
+    color: $textColorDark; // or any hover color for dark
+  }
+
+  .blog-card:hover > h3 {
+    color: $textColorDark;
+  }
+
+  .go-corner {
+    background-color: $buttonHover; // slightly lighter maroon
+  }
+
+  .go-arrow {
+    color: #fff;
+  }
+
+  .blog-card-shadow {
+    box-shadow: 1px 0px 20px rgba(229, 137, 170, 0.2);
+  }
+}

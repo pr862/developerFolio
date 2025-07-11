@@ -1,49 +1,80 @@
-.education-heading {
-  font-size: 56px;
-  font-weight: 400;
-}
+@import "../../_globalColor";
 
 .education-section {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 3rem;
+  padding: 2rem;
   display: flex;
   flex-direction: column;
-  width: 90%;
-  padding: 20px 0px;
-  margin: 0px auto;
-  margin-top: 2rem;
+  align-items: flex-start;
+  text-align: left;
+  margin-bottom: 2rem;
+  line-height: 1.2;
 }
 
-.education-section > * {
-  flex: 1;
-  margin-bottom: 30px;
+.education-heading {
+  padding-left: 0;
+  list-style: none;
+  font-size: 3rem;
+  margin-top: 0;
+  z-index: 1;// Set to black
+  
 }
 
+/* Container */
 .education-card-container {
   display: flex;
   flex-direction: column;
-  padding-top: 20px;
+  gap: 1.5rem;
+  width: 100%;
 }
 
-@media (max-width: 1380px) {
-  .education-card-container {
-    padding-top: 0px;
-  }
-  .education-heading {
-    font-size: 40px;
-  }
-  .education-text-subtitle {
-    font-size: 18px;
-    text-align: center;
-  }
-}
-
+/* Responsive */
 @media (max-width: 768px) {
-  .education-card-container {
-    padding-top: 0px;
-  }
   .education-heading {
-    font-size: 30px;
+    font-size: 36px;
     text-align: center;
+    margin-left: 0;
   }
+
+  .education-section {
+    align-items: center;
+  }
+}
+
+/* Dark Mode */
+.dark-mode {
+  .education-heading {
+    color: white;
+  }
+
+  .education-card {
+    background: none;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+  }
+
+  .education-card-content {
+    color: $textColorDark;
+  }
+
+  .education-card-title {
+    color: $textColorDark;
+  }
+
+  .education-card-subtitle,
+  .education-duration {
+    color: $subTitle;
+  }
+}
+
+/* Responsive Tweaks */
+@media (max-width: 768px) {
+  .education-heading {
+    font-size: 36px;
+  }
+
   .education-text-subtitle {
     font-size: 16px;
   }

@@ -11,12 +11,22 @@
   ); // soft version of light maroon
   border-radius: 20px;
   padding: 2rem;
-  border: none;
   box-shadow: #e589aa;
   overflow: hidden;
   transition: transform 0.4s ease, box-shadow 0.4s ease;
   z-index: 1;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.1), 
+              0 8px 32px rgba(229, 137, 170, 0.3); // glowing maroon effect
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+
+  &:hover {
+    transform: translateY(-12px) scale(1.015);
+    box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.2),
+                0 20px 50px rgba(229, 137, 170, 0.4);
+  }
 }
+
 
 .project-card:hover {
   transform: translateY(-12px) scale(1.015);
@@ -54,19 +64,17 @@
 }
 
 .card-title {
-  font-size: 24px;
-  font-weight: 800;
+  color: $textColor;
+  font-size: 16px;
+  font-weight: normal;
   text-align: center;
   margin-top: 1rem;
   margin-bottom: 0.5rem;
-  background: linear-gradient(90deg, #801336, #e589aa);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: fadeInUp 0.5s ease-in-out;
+  background: none;
+  animation: none;
   z-index: 1;
-  text-shadow: 0 2px 10px rgba(229, 137, 170, 0.4);
+  text-shadow: none;
 }
-
 .card-subtitle {
   text-align: center;
   color: $textColor;
@@ -74,6 +82,8 @@
   margin-bottom: 1.5rem;
   animation: fadeInUp 0.6s ease-in-out;
 }
+
+
 
 .project-card-footer {
   display: flex;
@@ -125,3 +135,47 @@
     font-size: 14px;
   }
 }
+.skills-heading {
+  font-size: 48px;
+  font-weight: 800;
+  text-align: left;
+  margin-bottom: 1rem;
+  color: #000; // Light mode (black)
+
+  animation: fadeInUp 0.6s ease-in-out;
+
+  @media (max-width: 768px) {
+    font-size: 32px;
+  }
+}
+
+// Dark mode override
+.dark-mode 
+.skills-heading {
+  color: #fff; // Dark mode (white)
+}
+.project-card {
+  background: none;
+  box-shadow: none;
+}
+
+
+  .card-title {
+    color: $textColorDark;
+  }
+
+  .card-subtitle {
+    color: $subTitle;
+  }
+
+  .project-tag {
+    background: linear-gradient(90deg, #e589aa, #801336);
+    color: #fff;
+
+    &:hover {
+      background: linear-gradient(90deg, #801336, #e589aa);
+    }
+  }
+  
+
+
