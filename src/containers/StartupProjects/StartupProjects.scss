@@ -15,18 +15,17 @@
   overflow: hidden;
   transition: transform 0.4s ease, box-shadow 0.4s ease;
   z-index: 1;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.1), 
-              0 8px 32px rgba(229, 137, 170, 0.3); // glowing maroon effect
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.1),
+    0 8px 32px rgba(229, 137, 170, 0.3); // glowing maroon effect
   transition: transform 0.4s ease, box-shadow 0.4s ease;
 
   &:hover {
     transform: translateY(-12px) scale(1.015);
     box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.2),
-                0 20px 50px rgba(229, 137, 170, 0.4);
+      0 20px 50px rgba(229, 137, 170, 0.4);
   }
 }
-
 
 .project-card:hover {
   transform: translateY(-12px) scale(1.015);
@@ -82,8 +81,6 @@
   margin-bottom: 1.5rem;
   animation: fadeInUp 0.6s ease-in-out;
 }
-
-
 
 .project-card-footer {
   display: flex;
@@ -150,8 +147,7 @@
 }
 
 // Dark mode override
-.dark-mode 
-.skills-heading {
+.dark-mode .skills-heading {
   color: #fff; // Dark mode (white)
 }
 .project-card {
@@ -159,23 +155,19 @@
   box-shadow: none;
 }
 
+.card-title {
+  color: $textColorDark;
+}
 
-  .card-title {
-    color: $textColorDark;
+.card-subtitle {
+  color: $subTitle;
+}
+
+.project-tag {
+  background: linear-gradient(90deg, #e589aa, #801336);
+  color: #fff;
+
+  &:hover {
+    background: linear-gradient(90deg, #801336, #e589aa);
   }
-
-  .card-subtitle {
-    color: $subTitle;
-  }
-
-  .project-tag {
-    background: linear-gradient(90deg, #e589aa, #801336);
-    color: #fff;
-
-    &:hover {
-      background: linear-gradient(90deg, #801336, #e589aa);
-    }
-  }
-  
-
-
+}
