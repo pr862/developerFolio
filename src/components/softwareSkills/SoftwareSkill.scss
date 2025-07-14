@@ -1,65 +1,104 @@
 @import "../../_globalColor";
 
-.dev-icons {
-  padding-left: 0;
-  list-style: none;
-  font-size: 3rem;
-  margin-bottom: 0;
-  margin-top: 0;
-  text-align: center;
+.social-media-div {
+  font-size: 2em;
 }
 
-.software-skill-inline {
-  display: inline-block;
-  margin-right: 20px;
-  margin-bottom: 20px;
-  position: relative;
-  transition: transform 0.25s cubic-bezier(0.4, 2, 0.6, 1);
+.icon-button {
+  margin-bottom: 10px;
 }
 
-.software-skill-inline > i {
-  color: $subTitle;
-  transition: color 0.3s, transform 0.3s, box-shadow 0.3s;
-  box-shadow: 0 2px 12px rgba(229, 137, 170, 0.1); // maroon tint shadow
-  border-radius: 16px;
-  background: #fff;
-  padding: 10px;
-}
-
-.software-skill-inline > i:hover {
-  color: #fff;
-  background: linear-gradient(135deg, #801336, #e589aa); // maroon gradient
-  transform: scale(1.18) rotate(-8deg);
-  box-shadow: 0 8px 32px 0 #801336, 0 0 24px #e589aa;
+.icon-button i {
+  color: $textColorDark;
+  border-radius: 2.6rem;
   cursor: pointer;
+  display: inline-block;
+  font-size: 1.3rem;
+  height: 2.6rem;
+  line-height: 2.6rem;
+  margin: 0 5px;
+  position: relative;
+  text-align: center;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 2.6rem;
+  margin-bottom: 10px;
+  transition: 0.2s ease-in;
+  background: #fff;
+  border: 3px solid transparent;
+  box-shadow: #801336;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
 }
-
-.software-skill-inline > p {
-  color: $subTitle;
-  font-size: 12px;
-  margin-top: 8px;
-  opacity: 0;
-  pointer-events: none;
-  position: absolute;
-  left: 50%;
-  top: 110%;
-  transform: translateX(-50%) translateY(10px);
-  background: rgba(229, 137, 170, 0.95); // maroon tooltip bg
-  padding: 4px 14px;
-  border-radius: 8px;
-  box-shadow: 0 2px 12px rgba(229, 137, 170, 0.2);
-  transition: opacity 0.3s, transform 0.3s;
-  white-space: nowrap;
-  z-index: 2;
-}
-
-.software-skill-inline:hover > p {
-  opacity: 1;
-  transform: translateX(-50%) translateY(0);
+.icon-button i:hover {
+  transform: scale(1.18) rotate(-10deg);
+  box-shadow: 0 0 24px rgba(128, 0, 0, 0.5), 0 0 40px rgba(75, 0, 0, 0.6); // maroon glow
   color: #fff;
-  font-weight: 600;
+  background: linear-gradient(135deg, #d45050, #711a1a); // maroon gradient
+  border: 3px solid #800000;
 }
 
-.software-skill-inline:hover {
-  transform: scale(1.08);
+
+.facebook i {
+  background-color: $faceBook;
+}
+
+.linkedin i {
+  background-color: $linkedin;
+}
+
+.github i {
+  background-color: $github;
+}
+
+.gitlab i {
+  background-color: $gitlab;
+}
+
+.google i {
+  background-color: $google;
+}
+
+.twitter i {
+  background-color: $twitter;
+}
+
+.medium i {
+  background-color: $medium;
+}
+
+.stack-overflow i {
+  background-color: $stackoverflow;
+}
+
+.kaggle i {
+  background-color: $kaggle;
+}
+
+.instagram i {
+  background-color: $instagram;
+}
+
+/* Hover Transition */
+.twitter i:hover,
+.google i:hover,
+.gitlab i:hover,
+.github i:hover,
+.linkedin i:hover,
+.facebook i:hover,
+.instagram i:hover,
+.stack-overflow i:hover,
+.kaggle i:hover,
+.medium i:hover {
+  background-color: $textColor;
+}
+
+/* Media Query */
+@media (max-width: 768px) {
+  .social-media-div {
+    text-align: center;
+  }
 }
