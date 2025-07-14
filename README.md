@@ -2,7 +2,6 @@
 
 > A professional, customizable developer portfolio built with React.js.
 
-![Portfolio Screenshot](https://user-images.githubusercontent.com/221116816/226098179-0efb8b7f-74a0-4373-a6c9-f2b093f97c65.png)
 
 ## 🔗 Live Demo
 
