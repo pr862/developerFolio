@@ -84,7 +84,7 @@ const techStack = {
     },
     {
       Stack: "Backend",
-      progressPercentage: "65%"
+      progressPercentage: "50%"
     },
     {
       Stack: "Programming",
@@ -135,6 +135,17 @@ const bigProjects = {
   subtitle: "Projects I'm currently building and customizing",
   projects: [
     {
+      projectName: "Creative Todo App",
+      projectDesc:
+        "A feature-rich React Todo app with emoji picker, category filters, motivational messages, smart suggestions, and animated UI — all built with React.",
+      footerLink: [
+        {
+          name: "GitHub Repo",
+          url: "https://github.com/pr862/to-do_list"
+        },
+      ]
+    },
+    {
       projectName: "DevFolio",
       projectDesc:
         "A personalized portfolio site built using React and DeveloperFolio, showcasing my internship and frontend projects.",
@@ -148,6 +159,7 @@ const bigProjects = {
   ],
   display: true
 };
+
 
 // Achievement Section
 // Include certificates, talks etc
