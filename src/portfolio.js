@@ -142,7 +142,7 @@ const bigProjects = {
         {
           name: "GitHub Repo",
           url: "https://github.com/pr862/to-do_list"
-        },
+        }
       ]
     },
     {
@@ -159,7 +159,6 @@ const bigProjects = {
   ],
   display: true
 };
-
 
 // Achievement Section
 // Include certificates, talks etc
