@@ -21,7 +21,8 @@ const illustration = {
 
 const greeting = {
   title: "Hi, I'm Princy",
-  subtitle: "Passionate about crafting smooth user experiences with React, CSS, and the latest in frontend innovation.",
+  subtitle:
+    "Passionate about crafting smooth user experiences with React, CSS, and the latest in frontend innovation.",
   displayGreeting: true
 };
 
@@ -40,12 +41,8 @@ const skillsSection = {
   title: "Crafting the Web",
   subTitle: "PASSIONATE FRONTEND DEVELOPER EXPLORING THE DIGITAL UNIVERSE",
   skills: [
-    emoji(
-      "Building responsive and accessible UIs with HTML, CSS & JavaScript"
-    ),
-    emoji(
-      "Creating seamless experiences using React.js and modern frameworks"
-    ),
+    emoji("Building responsive and accessible UIs with HTML, CSS & JavaScript"),
+    emoji("Creating seamless experiences using React.js and modern frameworks"),
     emoji(
       "Connecting APIs & tools like Firebase, REST, and Git to bring data to life"
     )
@@ -288,4 +285,4 @@ export {
   twitterDetails,
   isHireable,
   resumeSection
-}
+};

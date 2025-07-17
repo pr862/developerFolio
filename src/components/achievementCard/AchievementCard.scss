@@ -1,4 +1,4 @@
- @import "../../_globalColor";
+@import "../../_globalColor";
 
 // Image Styling
 .card-image {
@@ -110,7 +110,7 @@ span.certificate-tag:hover {
 .dark-mode {
   // Certificate Card Background for Dark Mode
   .certificate-card {
-    background:none;
+    background: none;
     border: 1px solid rgba(58, 37, 37, 0.05);
     box-shadow: 0 20px 50px rgba(241, 235, 237, 0.2);
     box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.1),
