@@ -1,10 +1,13 @@
-@import "../../_globalColor";
+ @import "../../_globalColor";
 
 // Image Styling
 .card-image {
   max-width: 100%;
   height: auto;
   width: 250px;
+  object-fit: contain;
+  display: block;
+  margin: auto;
 }
 
 // Card Title
@@ -59,7 +62,7 @@
 .certificate-image-div {
   position: relative;
   height: 250px;
-  overflow: hidden;
+  overflow: visible;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -82,15 +85,12 @@
 
 // Tag Styling
 .certificate-card-footer span.certificate-tag {
-  background: linear-gradient(90deg, #801336, #e589aa); // dark to light maroon
-  color: white;
+  background: $buttonColor;
+  color: $lightBackground3;
   font-size: 0.75rem;
   padding: 0.4rem 0.8rem;
-  border-radius: 999px;
-  transition: background 0.3s;
+  border-radius: 4px;
   cursor: pointer;
-  box-shadow: 0 4px 12px rgba(229, 137, 170, 0.2);
-
   vertical-align: middle;
   align-items: center;
   display: inline-flex;
@@ -105,18 +105,14 @@
 
 // Gradient reverse on hover
 span.certificate-tag:hover {
-  background: linear-gradient(
-    90deg,
-    #e589aa,
-    #801336
-  ); // light to dark on hover
+  background: $buttonHover;
 }
 .dark-mode {
   // Certificate Card Background for Dark Mode
   .certificate-card {
-    background: linear-gradient(135deg, #1c1c1c, #2a2a2a); // dark gradient
+    background:none;
     border: 1px solid rgba(58, 37, 37, 0.05);
-    box-shadow: 0 20px 50px rgba(151, 67, 98, 0.2);
+    box-shadow: 0 20px 50px rgba(241, 235, 237, 0.2);
     box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.1),
       0 8px 32px rgba(229, 137, 170, 0.3); // glowing maroon effect
     transition: transform 0.4s ease, box-shadow 0.4s ease;

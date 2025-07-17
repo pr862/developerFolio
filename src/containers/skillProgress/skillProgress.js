@@ -14,13 +14,6 @@ export default function StackProgress() {
         <div className="skills-bar">
           <h1 className="skills-heading">Proficiency</h1>
 
-          {/* ✅ Add a list of descriptions above the progress bars */}
-          <ul className="proficiency-description">
-            <li>⚡ Expertise in building responsive UI with HTML, CSS, JS</li>
-            <li>⚡ Comfortable with React and component architecture</li>
-            <li>⚡ Basic understanding of backend and API integration</li>
-          </ul>
-
           {techStack.experience.map((exp, i) => {
             const progressStyle = {
               width: exp.progressPercentage

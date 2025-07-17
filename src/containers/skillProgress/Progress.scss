@@ -43,11 +43,15 @@
 }
 
 /* Image (right side Lottie or SVG) */
-.skills-image > img {
+.skills-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-left: 80px;
-  max-width: 90%;
-  height: auto;
 }
+
+.skills-image > img {
+  max-width: 90%;
 
 /* Heading */
 .skills-heading {
@@ -91,4 +95,5 @@
   .skills-image {
     display: none;
   }
+}
 }

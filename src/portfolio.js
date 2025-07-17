@@ -4,10 +4,12 @@
 
 import emoji from "react-easy-emoji";
 import splashAnimation from "./assets/lottie/splashAnimation"; // Rename to your file name for custom animation
+import canopasLogo from "./assets/images/images.jpeg";
 
 const splashScreen = {
   enabled: true, // set false to disable splash screen
   animation: splashAnimation,
+  username: "princyvithani", // Your GitHub username
   duration: 2000 // Set animation duration as per your animation
 };
 
@@ -18,8 +20,8 @@ const illustration = {
 };
 
 const greeting = {
-  title: "Hi, I'm Princy Vithani.",
-  subtitle: "Web Developer | Coder | Learner",
+  title: "Hi, I'm Princy",
+  subtitle: "Passionate about crafting smooth user experiences with React, CSS, and the latest in frontend innovation.",
   displayGreeting: true
 };
 
@@ -39,13 +41,13 @@ const skillsSection = {
   subTitle: "PASSIONATE FRONTEND DEVELOPER EXPLORING THE DIGITAL UNIVERSE",
   skills: [
     emoji(
-      "⚡ Building responsive and accessible UIs with HTML, CSS & JavaScript"
+      "Building responsive and accessible UIs with HTML, CSS & JavaScript"
     ),
     emoji(
-      "⚡ Creating seamless experiences using React.js and modern frameworks"
+      "Creating seamless experiences using React.js and modern frameworks"
     ),
     emoji(
-      "⚡ Connecting APIs & tools like Firebase, REST, and Git to bring data to life"
+      "Connecting APIs & tools like Firebase, REST, and Git to bring data to life"
     )
   ],
   softwareSkills: [
@@ -107,7 +109,7 @@ const workExperiences = {
         {
           role: "Frontend Developer Intern",
           company: "Canopas",
-          companylogo: require("./assets/images/images.jpeg"),
+          companylogo: canopasLogo,
           date: "June 2025 – Present",
           desc: "Working on developing and maintaining modern, responsive UI using React, SCSS, and reusable components.",
           descBullets: [
@@ -172,7 +174,7 @@ const achievementSection = {
       title: "Internship at Canopas",
       subtitle:
         "Completed a frontend development internship at Canopas, working on real-world React projects and UI design.",
-      image: require("./assets/images/images.jpeg"), // Replace with your logo image path
+      image: canopasLogo,
       imageAlt: "Canopas Logo",
       footerLink: [
         {
@@ -286,4 +288,4 @@ export {
   twitterDetails,
   isHireable,
   resumeSection
-};
+}

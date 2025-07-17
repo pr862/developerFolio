@@ -69,11 +69,6 @@
   z-index: 0;
   overflow: hidden;
   height: 100%;
-  background: linear-gradient(
-    135deg,
-    #ffffff,
-    #fce8ee
-  ); // light maroon background
 }
 
 .blog-card::before {
@@ -152,13 +147,13 @@
 }
 .dark-mode {
   .blog-container {
-    background-color: #1c1c1c;
+    background-color:none;
     color: $textColorDark;
-    box-shadow: 0 0 30px rgba(229, 137, 170, 0.15); // soft maroon glow
+    box-shadow: 0 0 30px rgba(232, 228, 229, 0.15); // soft maroon glow
   }
 
   .blog-card {
-    background: linear-gradient(135deg, #1c1c1c, #2a2a2a); // dark gradient
+    background:none;
     color: $textColorDark;
   }
 
@@ -187,6 +182,6 @@
   }
 
   .blog-card-shadow {
-    box-shadow: 1px 0px 20px rgba(229, 137, 170, 0.2);
+    box-shadow: 1px 0px 20px rgba(250, 248, 249, 0.2);
   }
 }

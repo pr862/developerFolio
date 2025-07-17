@@ -24,6 +24,7 @@
 
 .blog-subtitle {
   text-transform: uppercase;
+  text-align: left;
 }
 
 .blog-main-div > * {
@@ -37,7 +38,7 @@
 
 .blog-image-div > img {
   max-width: 100%;
-  height: auto;
+  height: auto
 }
 
 .blog-text-div {
@@ -62,12 +63,6 @@
     font-size: 30px;
     text-align: center;
   }
-
-  .blog-subtitle {
-    font-size: 16px;
-    line-height: normal;
-    text-align: center;
-  }
 }
 
 @media screen and (max-width: 480px) and (min-width: 300px) {
@@ -77,9 +72,15 @@
 }
 .dark-mode {
   .square {
-    background: #1c1c1c; // dark card background
+    width: 440px;
+    height: 430px;
+    background:none; // dark card background
     border: 1px solid rgba(255, 255, 255, 0.05); // subtle border
     box-shadow: 0px 20px 50px rgba(229, 137, 170, 0.2); // maroon glow
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    margin-top: 30px;
   }
 
   .square:hover {
@@ -87,14 +88,17 @@
   }
 
   .blog-header-text {
+    font-size: 56px;
+    font-weight: 400;
     color: $textColorDark;
   }
-
   .blog-subtitle {
-    color: $subTitle;
+    text-transform: uppercase;
+    text-align: left;
   }
 
   .subTitle {
     color: $subTitle;
   }
+  
 }

@@ -134,7 +134,14 @@
   padding: 1.5rem;
   margin-top: 2rem;
 }
-
+.experience-text-details ul,
+.experience-text-details ol {
+  list-style: none;
+  padding-left: 0;
+  margin-left: 0;
+  text-align: center;
+  justify-content: center;
+}
 /* Media Query */
 
 @media (max-width: 1380px) {

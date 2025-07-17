@@ -1,5 +1,6 @@
 import React, {createRef} from "react";
 import "./ExperienceCard.scss";
+import companyLogo from "../../assets/images/images.jpeg";
 
 export default function ExperienceCard({isDark}) {
   const imgRef = createRef();
@@ -26,7 +27,7 @@ export default function ExperienceCard({isDark}) {
           crossOrigin={"anonymous"}
           ref={imgRef}
           className="experience-roundedimg"
-          src={require("../../assets/images/images.jpeg")}
+          src={companyLogo}
           alt="Canopas"
         />
       </div>
