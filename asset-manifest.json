@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/developerFolio/static/css/main.33729842.chunk.css",
+    "main.css": "/developerFolio/static/css/main.3e53bcfb.chunk.css",
     "main.js": "/developerFolio/static/js/main.286d227c.chunk.js",
     "main.js.map": "/developerFolio/static/js/main.286d227c.chunk.js.map",
     "runtime-main.js": "/developerFolio/static/js/runtime-main.bc696e43.js",
@@ -16,7 +16,7 @@
     "index.html": "/developerFolio/index.html",
     "static/css/3.1474bc28.chunk.css.map": "/developerFolio/static/css/3.1474bc28.chunk.css.map",
     "static/css/4.451e8ac1.chunk.css.map": "/developerFolio/static/css/4.451e8ac1.chunk.css.map",
-    "static/css/main.33729842.chunk.css.map": "/developerFolio/static/css/main.33729842.chunk.css.map",
+    "static/css/main.3e53bcfb.chunk.css.map": "/developerFolio/static/css/main.3e53bcfb.chunk.css.map",
     "static/js/2.a3ec893c.chunk.js.LICENSE.txt": "/developerFolio/static/js/2.a3ec893c.chunk.js.LICENSE.txt",
     "static/media/index.css": "/developerFolio/static/media/Montserrat-Regular.3cd78665.ttf",
     "static/media/contactMailDark.svg": "/developerFolio/static/media/contactMailDark.1db650d3.svg",
@@ -29,7 +29,7 @@
   "entrypoints": [
     "static/js/runtime-main.bc696e43.js",
     "static/js/2.a3ec893c.chunk.js",
-    "static/css/main.33729842.chunk.css",
+    "static/css/main.3e53bcfb.chunk.css",
     "static/js/main.286d227c.chunk.js"
   ]
 }
