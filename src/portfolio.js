@@ -21,7 +21,8 @@ const illustration = {
 
 const greeting = {
   title: "Hi, I'm Princy",
-  subtitle: "I'm a passionate Frontend Web Developer 🚀 with experience building responsive and interactive web applications using JavaScript, React.js, and modern CSS. I love creating smooth, user-friendly interfaces that bring designs to life.",
+  subtitle:
+    "I'm a passionate Frontend Web Developer 🚀 with experience building responsive and interactive web applications using JavaScript, React.js, and modern CSS. I love creating smooth, user-friendly interfaces that bring designs to life.",
   displayGreeting: true
 };
 
