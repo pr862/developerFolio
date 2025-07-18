@@ -17,7 +17,8 @@
 }
 
 .dark-menu li a:hover {
-  background-color: $buttonColor !important;
+  background-color: $buttonColor 
+  !important;
 }
 
 .header {
@@ -48,6 +49,7 @@
 .header li a:hover,
 .header .menu-btn:hover {
   background-color: #801336;
+  color: white
 }
 
 .header .logo {
@@ -58,6 +60,8 @@
   text-decoration: none;
   margin-top: 10px;
   line-height: normal;
+  color: $textColor;
+  font-family: "Agustina Regular";
 }
 
 .header .logo-name {
@@ -67,6 +71,7 @@
   -webkit-font-variant-ligatures: no-common-ligatures;
   padding: 0 10px;
 }
+
 
 /* menu */
 

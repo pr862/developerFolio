@@ -21,8 +21,7 @@ const illustration = {
 
 const greeting = {
   title: "Hi, I'm Princy",
-  subtitle:
-    "Passionate about crafting smooth user experiences with React, CSS, and the latest in frontend innovation.",
+  subtitle: "I'm a passionate Frontend Web Developer 🚀 with experience building responsive and interactive web applications using JavaScript, React.js, and modern CSS. I love creating smooth, user-friendly interfaces that bring designs to life.",
   displayGreeting: true
 };
 
@@ -141,6 +140,10 @@ const bigProjects = {
         {
           name: "GitHub Repo",
           url: "https://github.com/pr862/to-do_list"
+        },
+        {
+          name: "Live Demo",
+          url: "https://pr862.github.io/to-do_list/"
         }
       ]
     },
@@ -152,6 +155,10 @@ const bigProjects = {
         {
           name: "GitHub Repo",
           url: "https://github.com/pr862/developerFolio"
+        },
+        {
+          name: "Live Demo",
+          url: "https://pr862.github.io/developerFolio/"
         }
       ]
     }
